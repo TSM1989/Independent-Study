@@ -1,0 +1,28 @@
+#burger {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+    background: linear-gradient(
+      to bottom, 
+      skyblue, skyblue 20%, 
+      white 20%, white 40%, 
+      skyblue 40%, skyblue 60%, 
+      white 60%, white 80%, 
+      skyblue 80%, skyblue 100%
+    );
+}
+
+#burger #sidebar {
+    visibilty: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: skyblue;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
