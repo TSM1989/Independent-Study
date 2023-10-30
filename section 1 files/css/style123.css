@@ -135,14 +135,16 @@ header {
     opacity: 0.75;
     color: #000000; 
     margin-top: 50px;
+    font-size: xx-large;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background-color: skyblue; 
     opacity: 0.75;
-    color: #fff; 
+    color: #fff;
+    font-size: small;
 }
 
 
