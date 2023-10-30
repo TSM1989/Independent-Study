@@ -1,16 +1,11 @@
-ul {
-    font-family: 'Carter One', sans-serif;
-}
-
-h3 {
-    font-family: 'Carter One', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 body {
   padding: 0px;
   margin: 0px;
   font-size: 20px;
   min-height: 200vh;
+  font-family: 'Cabin', Sans-serif;
 }
 
 .overlay{
@@ -132,4 +127,84 @@ body {
 #hamburger-input:checked ~ .overlay{
    visibility: visible;
   opacity: 0.4;
+}
+
+header {
+    text-align: center;
+    padding: 20px; 
+    opacity: 0.75;
+    color: #000000; 
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: skyblue; 
+    opacity: 0.75;
+    color: #fff; 
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.box {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 70px; 
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333; 
+}
+
+a:hover {
+    color: #3498db; 
+}
+
+#explore-players {
+    background-color: #3498db;
+}
+
+#explore-teams {
+    background-color: #e74c3c;
+}
+
+#explore-data {
+    background-color: #2ecc71;
+}
+
+
+
+@media screen and (max-width: 750px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
 }
