@@ -1,43 +1,76 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style123.css">
     <title>Gridiron Graphics</title>
-    <meta charset='utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="author" content="Capstone Website Project">
-
-    <meta property="og:image" content="img/">
-    <meta property="og:image:width" content="965">
-    <meta property="og:image:height" content="363">
-    <meta property="og:title" content="HTML"> 
-    <meta property="og:description" content="Capstone Website Project">
-    <meta property="og:type" content="website">
-    <meta name="twitter:creator" content="@t.maiorca89">
-
-    <link rel="stylesheet" href="css/Style3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Graduate&display=swap" rel="stylesheet">
-        
-  </head>
-
-  <body>
-
-  <input type="checkbox" id="hamburger-input" class="burger-shower" />
-
-  <button id="hamburger-menu" for="hamburger-input">
-    <nav id="sidebar-menu">
-        <h3>Menu</h3>
+</head>
+<body>
+    <nav id="main-menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Player comparisons</a></li>
-            <li><a href="#">Team comparisons</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="#" onclick="navigateTo('about')">About</a></li>
+            <li><a href="#" onclick="navigateTo('player-comparisons')">Player Comparisons</a></li>
+            <li><a href="#" onclick="navigateTo('team-comparisons')">Team Comparisons</a></li>
+            <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
         </ul>
     </nav>
-</button>
 
-<div class="overlay"></div>
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
+    <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#" onclick="navigateTo('about')">About</a></li>
+                <li><a href="#" onclick="navigateTo('player-comparisons')">Player Comparisons</a></li>
+                <li><a href="#" onclick="navigateTo('team-comparisons')">Team Comparisons</a></li>
+                <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </label>
 
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Name</h1>
+    </header>
+
+    <section id="home">
+        <!-- Content for the Home page -->
+    </section>
+
+    <section id="about" style="display: none;">
+        <!-- Content for the About page -->
+    </section>
+
+    <section id="player-comparisons" style="display: none;">
+        <!-- Content for the Player Comparisons page -->
+    </section>
+
+    <section id="team-comparisons" style="display: none;">
+        <!-- Content for the Team Comparisons page -->
+    </section>
+
+    <section id="contact" style="display: none;">
+        <!-- Content for the Contact page -->
+    </section>
+
+    <footer>
+        <h1>Name &copy;2023, by Name</h1>
+    </footer>
+
+    <script>
+        function navigateTo(pageId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the selected section
+            const selectedSection = document.getElementById(pageId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+    </script>
 </body>
+</html>
