@@ -31,29 +31,62 @@
 
     <div class="overlay"></div>
 
-    <header>
-        <h1>Name</h1>
-    </header>
+    <h1>Gridiron Graphics</h1>
 
     <section id="home">
-        <!-- Content for the Home page -->
+      <div class="box-container"> 
+        <div class="box" id="explore-players">
+            <a href="#" onclick="navigateTo('player-comparisons')">
+                <h2>Explore Positions</h2>
+            </a>
+        </div>
+        <div class="box" id="explore-teams">
+            <a href="#" onclick="navigateTo('team-comparisons')">
+                <h2>Explore Teams</h2>
+            </a>
+        </div>
+        <div class="box" id="explore-data">
+            <a href="#" onclick="navigateTo('explore-data')">
+                <h2>Explore the Data</h2>
+            </a>
+        </div>
+    </div>
     </section>
 
     <section id="about" style="display: none;">
-        <!-- Content for the About page -->
+        <h2>Welcome.</h2>
+        <p>This is Gridiron Graphics, where cutting edge data visualization meets football statistics to keep you in the know.</p>
     </section>
 
     <section id="player-comparisons" style="display: none;">
-        <!-- Content for the Player Comparisons page -->
+        <h3>Player information, menus, and graphic tool will live here.</h3>
     </section>
 
     <section id="team-comparisons" style="display: none;">
-        <!-- Content for the Team Comparisons page -->
+        <h3>Team information, menus, and graphic tool will live here.</h3>
     </section>
 
     <section id="contact" style="display: none;">
-        <!-- Content for the Contact page -->
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
     </section>
+
+    <section id="explore-data" style="display: none;">
+      <h3>Data informationi will go here.</h3>>
+  </section>
 
     <footer>
         <h1>Name &copy;2023, by Name</h1>
